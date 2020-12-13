@@ -1,0 +1,459 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat-Bold.otf) format("otf"),
+    url(/fonts/Montserrat-Bold.ttf) format("ttf"),
+    url(/fonts/Montserrat-Bold.woff) format("woff")
+}
+
+@font-face{
+    font-family: "PT Serif";
+    src: url(/fonts/PTF56F.ttf) format("ttf"),
+    url(/fonts/PTF56F.woff) format("woff")
+}
+
+
+body{
+    margin: 0;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header-bg-img{
+    background: url("/img/bg-image1.png") no-repeat center;
+    height: 688px;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    .background-color-image{
+        background-color: rgba(227, 213, 184, 0.73);
+        height: 99%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;    
+    }
+    .header-block{
+        display: flex;
+        justify-content: space-between;
+        .logo-block{
+            padding-top: 38px;
+        }
+        .menu{
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-top: 65px;
+            .nav-menu{
+                list-style: none;
+                text-decoration: none;
+                outline: none;
+                
+                .nav-menu__link{
+                    padding: 11px 15px;
+                    margin-right: 8px;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    border-radius: 5px;
+                    font-family: "Montserrat";
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: #1b1b1b;
+                    &:hover{
+                        background-color: #d03958;
+                        // width: 87px;
+                        // height: 37px;
+                       color: white;
+                    }
+                }
+            }
+            
+        }
+    }
+    .header-bottom{
+        display: flex;
+        justify-content: space-between;
+        .header-bottom-td{
+            .header-bottom-td__title{
+                color: #161616;
+                font-size: 90px;
+                padding-top: 163px;
+                margin: 0px;
+                font-family: "Montserrat";
+                .title__color-text{
+                    color: #d03958;
+                }
+            }
+            .header-bottom-td__description{
+                padding-top: 28px;
+                color: #161616;
+                font-family: "PT Serif";
+                font-size: 20px;
+                font-weight: 400;
+                margin: 0px;
+            }
+        }
+        .header-bottom-form{
+            width: 400px;
+            height: 520px;
+            background-color: #d03958;
+            border-radius: 5px;
+            position: relative;
+            top: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .request-a-quote{
+                color: #ffffff;
+                font-family: "Montserrat";
+                font-size: 22px;
+                font-weight: 400;
+                margin: 30px 0px 30px 0px;
+            }
+            
+            .input{
+                width: 353px;
+                height: 57px;
+                border-radius: 5px;
+                margin: 0px;
+                padding: 0px;
+                margin-bottom: 17px;
+                padding-left: 15px;
+                font-family: "PT Serif";
+            }
+            .checkbox{
+                margin-top: 25px;
+                margin-bottom: 22px;
+                position: relative;
+                margin-left: -68px;
+                .fake{
+                    margin-right: 22px;
+                    display: inline-block;
+                    width: 21px;
+                    height: 20px;
+                    border-radius: 3px;
+                    top: 0;
+                    left: 0;
+                    background-color: #ffffff;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+    
+                .field{
+                    margin: 0;
+                    width: 19px;
+                    height: 18px;
+                    position: absolute;
+                    opacity: 0;
+                }
+                .field:checked + .fake{
+                    background-image: url(/img/Bueno-verde.png);
+                }
+                .checkbox-label{
+                    font-family: "PT-Serif";
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+            .header-bottom__contacts__button{
+                width: 353px;
+                height: 57px;
+                background-color: #161616;
+                color: #ffffff;
+                font-family: "Montserrat";
+                font-size: 22px;
+                font-weight: 400;
+                border-radius: 5px;
+                margin-bottom: 15px;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.our-services-title{
+    color: #161616;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 388px;
+    height: 37px;
+    .color-our{
+        color:#d03958;
+    }
+}
+.all-services{
+    display: flex;
+    justify-content: space-between;
+    .services{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 75px;
+        .services-description{
+            color: #161616;
+            font-family: "PT Serif";
+            font-weight: 400;
+            font-size: 20px;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            margin-top: 45px;
+            
+        }  
+    }
+}
+
+.ourstory{
+    background-color: #d03958;
+    height: 123px;
+    .our-story{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        .our-story__description{
+            color: #ffffff;
+            font-family: "PT Serif";
+            font-size: 20px;
+            font-weight: 400;
+            width: 601px;
+        }
+        .our-story__button{
+            width: 269px;
+            height: 64px;
+            background-color: #e3d5b8;
+            color: black;
+            font-family: "Montserrat";
+            font-size: 22px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin: 0px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.price{
+    background-color: #e3d5b8;
+    height: 537px;
+    .price-title{
+            color: #1f1f1f;
+            font-family: "Montserrat";
+            font-size: 50px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin: 0px;
+            text-align: center;
+            padding-top: 60px;
+    }
+    .cards{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        .card{
+                width: 318px;
+                height: 389px;
+                background-color: #ffffff;
+                text-align: center;
+                .card-name{
+                    color: #161616;
+                    font-family: "PT Serif";
+                    font-size: 22px;
+                    font-weight: 400;
+                    padding-top: 16px;
+                }
+                .card-price{
+                    color: #d03958;
+                    font-family: "Montserrat";
+                    font-size: 60px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin: 0px;
+                }
+                .card-description{
+                    font-size: 20px;
+                    font-family: "PT Serif";
+                    color: #161616;
+                    font-weight: 400;
+                    text-align: center;
+                }
+                .card-button{
+                    width: 205px;
+                    height: 49px;
+                    background-color: #e3d5b8;
+                    color: black;
+                    font-family: "Montserrat";
+                    font-size: 22px;
+                    font-weight: 400;
+                    margin-top: 10px;
+
+                }
+                .card-button-purple{
+                    width: 205px;
+                    height: 49px;
+                    background-color: #e3d5b8;
+                    color: black;
+                    font-family: "Montserrat";
+                    font-size: 22px;
+                    font-weight: 400;
+                    margin-top: 22px;
+                }
+                .card-button-professional{
+                    width: 205px;
+                    height: 49px;
+                    background-color: #e3d5b8;
+                    color: black;
+                    font-family: "Montserrat";
+                    font-size: 22px;
+                    font-weight: 400;
+                    margin-top: 35px;
+                }
+                .hover:hover{
+                    background-color: purple;
+                    color: black;
+                }
+                .business{
+                    position: relative;
+                    .popular{
+                        width: 0;
+                        height: 0;
+                        border-top: 80px solid #b4a993;
+                        border-right: 80px solid transparent;
+                        position: absolute;
+                        left: 0;
+                        &::before{
+                            content: 'Popular';
+                            display: block;
+                            position: absolute;
+                            font-family: "PT-Serif", Arial, Helvetica, sans-serif;
+                            font-size: 15px;
+                            font-weight: 400;
+                            color: #1f1f1f;
+                            transform: rotate(-45deg);
+                            top: -60px;
+                            left: 2px;
+                        }
+                    }
+                }
+            }
+        }
+}
+
+.reviews{
+    .testimonial-gallery{
+        margin-top: 150px;
+        display: flex;
+        margin-bottom: 120px;
+        .testimonial{
+            .author{
+                color: #d03958;
+                font-size: 20px;
+                font-family: "Montserrat";
+                font-weight: 400;
+            }
+            .description-testimonial{
+                color: #161616;
+                font-family: "PT Serif";
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .top-testimonial{
+                position: relative;
+                
+                .title-testimonial{
+                    color: #1f1f1f;
+                    font-size: 50px;
+                    font-family: "Montserrat";
+                    font-weight: 700;
+                    padding-left: 63px;
+                }
+                .author{
+                    padding-left: 20px;
+                }
+                .description-testimonial{
+                    padding-left: 20px;
+                }
+                .top-testimonial__photo{
+                    position: absolute;
+                    left: 377px;
+                    top: 104px;
+                }
+            }
+            .bottom-testimonial{
+                position: relative;
+                background-color: #e3d5b8;
+                width: 439px;
+                height: 115px;
+                padding: 26px 36px 26px 26px;
+                .bottom-testimonial__photo{
+                    position: absolute;
+                    top: 43px;
+                    left: 379px;
+                }
+            }
+        }
+        .gallery{
+            padding-left: 100px;
+            .gallery-title{
+                color: #d03958;
+                font-family: "Montserrat";  width: 420px;
+                font-size: 50px;
+                font-weight: 700;
+                padding-left: 81px;
+                margin-bottom: 30px;
+            }
+            .gallery-images{
+                width: 420px;
+                display: flex;
+                flex-wrap: wrap;
+                .gallery-item{
+                    width: 105px;
+                    height: 105px;
+                    padding: 17px;
+                }
+            }
+            .view-more-link{
+                position: relative;
+                top: 18px;
+                right: -96px;
+                color: #d03958;
+                font-family: "Montserrat";
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: #161616;
+    .footer-block{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+        padding-bottom: 80px;
+       
+        .copyright{
+            color: #ffffff;
+            font-family: "PT Serif";
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: -0.4px;
+            .color-footer{
+                color:#c43754;
+            }
+        }
+        .logo-footer{
+
+        }
+    }
+}
